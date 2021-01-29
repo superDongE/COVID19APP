@@ -1,7 +1,7 @@
-package com.example.covid19app.home
+package com.dong.covid19app.home
 
-import com.example.covid19app.config.ApplicationClass
-import com.example.covid19app.home.models.HomeResponse
+import com.dong.covid19app.config.ApplicationClass
+import com.dong.covid19app.home.models.HomeResponse
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Call

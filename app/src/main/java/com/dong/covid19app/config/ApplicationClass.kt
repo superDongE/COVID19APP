@@ -1,4 +1,4 @@
-package com.example.covid19app.config
+package com.dong.covid19app.config
 
 import android.app.Application
 import android.content.SharedPreferences

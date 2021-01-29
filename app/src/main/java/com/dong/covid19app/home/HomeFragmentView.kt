@@ -1,6 +1,6 @@
-package com.example.covid19app.home
+package com.dong.covid19app.home
 
-import com.example.covid19app.home.models.HomeResponse
+import com.dong.covid19app.home.models.HomeResponse
 
 interface HomeFragmentView {
 

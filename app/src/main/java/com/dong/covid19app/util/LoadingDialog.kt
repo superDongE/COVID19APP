@@ -1,11 +1,11 @@
-package com.example.covid19app.util
+package com.dong.covid19app.util
 
 import android.app.Dialog
 import android.content.Context
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Window
-import com.example.covid19app.databinding.DialogLoadingBinding
+import com.dong.covid19app.databinding.DialogLoadingBinding
 
 class LoadingDialog(context: Context) : Dialog(context) {
     private lateinit var binding: DialogLoadingBinding

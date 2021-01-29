@@ -1,9 +1,8 @@
-package com.example.covid19app.home
+package com.dong.covid19app.home
 
-import com.example.covid19app.home.models.HomeResponse
+import com.dong.covid19app.home.models.HomeResponse
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface HomeRetrofitService {

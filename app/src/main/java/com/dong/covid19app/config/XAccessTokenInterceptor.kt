@@ -1,7 +1,7 @@
-package com.example.covid19app.config
+package com.dong.covid19app.config
 
-import com.example.covid19app.config.ApplicationClass.Companion.X_ACCESS_TOKEN
-import com.example.covid19app.config.ApplicationClass.Companion.sSharedPreferences
+import com.dong.covid19app.config.ApplicationClass.Companion.X_ACCESS_TOKEN
+import com.dong.covid19app.config.ApplicationClass.Companion.sSharedPreferences
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response

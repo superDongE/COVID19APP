@@ -1,15 +1,14 @@
-package com.example.covid19app.home
+package com.dong.covid19app.home
 
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import com.example.covid19app.R
-import com.example.covid19app.config.ApplicationClass.Companion.X_ACCESS_TOKEN
-import com.example.covid19app.config.BaseFragment
-import com.example.covid19app.databinding.FragmentHomeBinding
-import com.example.covid19app.home.models.HomeResponse
+import com.dong.covid19app.R
+import com.dong.covid19app.config.ApplicationClass.Companion.X_ACCESS_TOKEN
+import com.dong.covid19app.config.BaseFragment
+import com.dong.covid19app.databinding.FragmentHomeBinding
+import com.dong.covid19app.home.models.HomeResponse
 import com.github.mikephil.charting.animation.Easing
-import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry

@@ -1,4 +1,4 @@
-package com.example.covid19app.config
+package com.dong.covid19app.config
 
 import android.content.Context
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
-import com.example.covid19app.util.LoadingDialog
+import com.dong.covid19app.util.LoadingDialog
 
 abstract class BaseActivity<B : ViewBinding>(private val inflate: (LayoutInflater) -> B) :
     AppCompatActivity() {

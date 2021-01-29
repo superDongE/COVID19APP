@@ -12,7 +12,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.example.covid19app"
+        applicationId "com.dong.covid19app"
         minSdkVersion 22
         targetSdkVersion 30
         versionCode 1

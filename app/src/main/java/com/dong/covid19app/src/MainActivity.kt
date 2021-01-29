@@ -1,12 +1,11 @@
-package com.example.covid19app.src
+package com.dong.covid19app.src
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.covid19app.R
-import com.example.covid19app.config.BaseActivity
-import com.example.covid19app.databinding.ActivityMainBinding
-import com.example.covid19app.home.HomeFragment
-import com.example.covid19app.local.LocalFragment
+import com.dong.covid19app.R
+import com.dong.covid19app.config.BaseActivity
+import com.dong.covid19app.databinding.ActivityMainBinding
+import com.dong.covid19app.home.HomeFragment
+import com.dong.covid19app.local.LocalFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
