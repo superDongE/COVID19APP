@@ -16,10 +16,10 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.utils.ColorTemplate
 
 
-class HomeFragment: BaseFragment<FragmentHomeBinding>(
+class HomeFragment : BaseFragment<FragmentHomeBinding>(
     FragmentHomeBinding::bind,
     R.layout.fragment_home
-), HomeFragmentView{
+), HomeFragmentView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showLoadingDialog(this.context!!)
@@ -46,15 +46,16 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(
 
 
         val colorItems = ArrayList<Int>()
-        for(c in ColorTemplate.VORDIPLOM_COLORS) colorItems.add(c)
-        for(c in ColorTemplate.JOYFUL_COLORS) colorItems.add(c)
-        for(c in ColorTemplate.LIBERTY_COLORS) colorItems.add(c)
-        for(c in ColorTemplate.PASTEL_COLORS) colorItems.add(c)
+        for (c in ColorTemplate.VORDIPLOM_COLORS) colorItems.add(c)
+        for (c in ColorTemplate.JOYFUL_COLORS) colorItems.add(c)
+        for (c in ColorTemplate.LIBERTY_COLORS) colorItems.add(c)
+        for (c in ColorTemplate.PASTEL_COLORS) colorItems.add(c)
         colorItems.add(ColorTemplate.getHoloBlue())
 
         val pieDataSet = PieDataSet(entries, "")
         pieDataSet.apply {
             colors = colorItems
+            // 서클 안 색
             valueTextColor = Color.BLACK
             valueTextSize = 15f
             sliceSpace = 3f
@@ -67,15 +68,25 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(
             description.isEnabled = false
             isRotationEnabled = false
             setEntryLabelColor(Color.BLACK)
-            val des = Description()
-            des.text = "도시별 확진자 상위 5곳"
-            description = des
-            des.textSize = 13F
+//            val des = Description()
+//            des.text = "도시별 확진자 상위 5곳"
+//            description = des
+//            des.textSize = 13F
             //원의 라벨 크기를 변경한다.
             setEntryLabelTextSize(13F)
             animateY(1400, Easing.EaseInOutQuad)
             animate()
         }
+
+//        데이터 값 저장
+        binding.recoveredPercentage.text = response.recoveredPercentage.toString()
+        binding.deathPercentage.text = response.deathPercentage.toString()
+        binding.checkingCounter.text = response.checkingCounter
+        binding.caseCount.text = response.caseCount
+        binding.notcaseCount.text = response.notcaseCount
+        binding.todayRecovered.text = response.TodayRecovered
+        binding.todayDeath.text = response.TodayDeath
+        binding.totalCaseBefore.text = response.TotalCaseBefore
 
     }
 

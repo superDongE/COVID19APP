@@ -1,14 +1,29 @@
 <resources>
     <string name="app_name">코확</string>
 
-
+    <!--    splash-->
+    <string name="splash_title">코확</string>
+    <string name="splash_version">1.0.0</string>
     <!--    frg_home-->
     <string name="frg_home_title">홈</string>
 
     <!--    frg_local-->
     <string name="frg_local_title">지역</string>
 
+    <!--home-->
+    <string name="home_title">도시별 확진자 상위 5곳</string>
+    <string name="recoveredPercentage">국내 완치율(%)</string>
+    <string name="deathPercentage">국내 사망률(%)</string>
+    <string name="checkingCounter">국내 검사 중(명)</string>
+    <string name="caseCount">국내 검사 결과 양성(명)</string>
+    <string name="notcaseCount">국낸 검사 결과 음성(명)</string>
+    <string name="TotalChecking">총 검사완료 수(명)</string>
+    <string name="TodayRecovered">오늘 하루 완치자 수(명)</string>
+    <string name="TodayDeath">오늘 하루 사망자 수(명)</string>
+    <string name="TotalCaseBefore">전날 대비 환자 수(명)</string>
 
     <!--    파이차트 description-->
     <string name="pie_description">도시별 확진자 상위 5곳</string>
+
+
 </resources>
