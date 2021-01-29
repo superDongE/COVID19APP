@@ -18,7 +18,6 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::bind,
 
     override fun onGetCovidSuccess(response: HomeResponse) {
         dismissLoadingDialog()
-        Log.d("1q2w3e4r", "$response")
     }
 
     override fun onGetCoivdFailure(message: String) {
