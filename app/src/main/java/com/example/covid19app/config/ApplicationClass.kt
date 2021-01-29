@@ -10,7 +10,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 class ApplicationClass : Application() {
-    val API_URL = "https://api.corona-19.kr/korea/"
+    val API_URL = "https://api.corona-19.kr/"
 
     // 코틀린의 전역변수 문법
     companion object {
@@ -28,7 +28,7 @@ class ApplicationClass : Application() {
     override fun onCreate() {
         super.onCreate()
         sSharedPreferences =
-            applicationContext.getSharedPreferences("SOFTSQUARED_TEMPLATE_APP", MODE_PRIVATE)
+            applicationContext.getSharedPreferences("COVID19APP", MODE_PRIVATE)
         // 레트로핏 인스턴스 생성
         initRetrofitInstance()
     }
