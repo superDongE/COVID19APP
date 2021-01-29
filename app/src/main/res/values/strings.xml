@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">COVID19APP</string>
+    <string name="app_name">코확</string>
 
 
     <!--    frg_home-->
@@ -7,4 +7,8 @@
 
     <!--    frg_local-->
     <string name="frg_local_title">지역</string>
+
+
+    <!--    파이차트 description-->
+    <string name="pie_description">도시별 확진자 상위 5곳</string>
 </resources>

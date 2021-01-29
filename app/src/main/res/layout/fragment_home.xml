@@ -9,7 +9,7 @@
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/home_piechart"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

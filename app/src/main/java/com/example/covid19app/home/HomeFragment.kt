@@ -9,6 +9,7 @@ import com.example.covid19app.config.BaseFragment
 import com.example.covid19app.databinding.FragmentHomeBinding
 import com.example.covid19app.home.models.HomeResponse
 import com.github.mikephil.charting.animation.Easing
+import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
@@ -55,7 +56,7 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(
         pieDataSet.apply {
             colors = colorItems
             valueTextColor = Color.BLACK
-            valueTextSize = 16f
+            valueTextSize = 15f
             sliceSpace = 3f
             selectionShift = 5f
         }
@@ -65,8 +66,13 @@ class HomeFragment: BaseFragment<FragmentHomeBinding>(
             data = pieData
             description.isEnabled = false
             isRotationEnabled = false
-            centerText = "테스트입니다."
             setEntryLabelColor(Color.BLACK)
+            val des = Description()
+            des.text = "도시별 확진자 상위 5곳"
+            description = des
+            des.textSize = 13F
+            //원의 라벨 크기를 변경한다.
+            setEntryLabelTextSize(13F)
             animateY(1400, Easing.EaseInOutQuad)
             animate()
         }
