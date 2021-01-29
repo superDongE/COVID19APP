@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">COVID19APP</string>
+
+
+    <!--    frg_home-->
+    <string name="frg_home_title">홈</string>
+
+    <!--    frg_local-->
+    <string name="frg_local_title">지역</string>
 </resources>
