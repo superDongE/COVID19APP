@@ -1,8 +1,10 @@
 package com.dong.covid19app.home
 
 import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.RequiresApi
 import com.dong.covid19app.R
 import com.dong.covid19app.config.ApplicationClass.Companion.X_ACCESS_TOKEN
 import com.dong.covid19app.config.BaseFragment
@@ -13,17 +15,22 @@ import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.utils.ColorTemplate
+import java.time.LocalDate
+import java.time.LocalDateTime
+
 
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(
     FragmentHomeBinding::bind,
     R.layout.fragment_home
 ), HomeFragmentView {
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         showLoadingDialog(this.context!!)
         HomeService(this).tryGetCovid(X_ACCESS_TOKEN)
-
+        val onlyData: LocalDate = LocalDate.now()
+        binding.homeDate.text = onlyData.toString() + " 00시 기준"
     }
 
     override fun onResume() {
@@ -78,6 +85,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
         }
 
 //        데이터 값 저장
+//        binding.homeDate.text = response.updateTime
         binding.recoveredPercentage.text = response.recoveredPercentage.toString()
         binding.deathPercentage.text = response.deathPercentage.toString()
         binding.checkingCounter.text = response.checkingCounter

@@ -48,6 +48,18 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/home_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     <ScrollView
         android:id="@+id/home_scrollview"
         android:layout_width="0dp"
@@ -58,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/home_date">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,7 +97,8 @@
                     android:id="@+id/recoveredPercentage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -106,7 +119,8 @@
                     android:id="@+id/deathPercentage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -127,7 +141,8 @@
                     android:id="@+id/checkingCounter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -148,7 +163,8 @@
                     android:id="@+id/caseCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -169,7 +185,8 @@
                     android:id="@+id/notcaseCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -190,7 +207,8 @@
                     android:id="@+id/todayRecovered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -211,7 +229,8 @@
                     android:id="@+id/todayDeath"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <LinearLayout
@@ -232,7 +251,8 @@
                     android:id="@+id/totalCaseBefore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="퍼센트" />
+                    android:text="퍼센트"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
