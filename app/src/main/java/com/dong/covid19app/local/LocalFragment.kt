@@ -20,10 +20,9 @@ class LocalFragment: BaseFragment<FragmentLocalBinding>(FragmentLocalBinding::bi
 
     override fun onGetLocalSuccess(response: LocalResponse) {
         dismissLoadingDialog()
-        Log.d("1q2w3e4r", "${response.resultMessage}")
-        Log.d("1q2w3e4r", "${response.korea}")
-        Log.d("1q2w3e4r", "${response.seoul}")
-
+        val list = response.
+        val adapter = LocalRvAdapter(this.context!!, list)
+        binding.localRecycler.adapter = adapter
     }
 
     override fun onGetLocalFailure(message: String) {

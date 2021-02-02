@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="지역명"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="신규확진환자수"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+    <TextView
+        android:id="@+id/newCasenewCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="newCase"
+        app:layout_constraintStart_toEndOf="@+id/newCase"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+
+    <TextView
+        android:id="@+id/totalCasetotalCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="totalCase"
+        app:layout_constraintStart_toEndOf="@+id/totalCase"
+        app:layout_constraintTop_toBottomOf="@+id/newCasenewCase" />
+
+    <TextView
+        android:id="@+id/recoveredrecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="recovered"
+        app:layout_constraintStart_toEndOf="@+id/recovered"
+        app:layout_constraintTop_toBottomOf="@+id/totalCasetotalCase" />
+
+    <TextView
+        android:id="@+id/deathdeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="death"
+        app:layout_constraintStart_toEndOf="@+id/death"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+    <TextView
+        android:id="@+id/newFcasenewFcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="newFcase"
+        app:layout_constraintStart_toEndOf="@+id/newFcase"
+        app:layout_constraintTop_toBottomOf="@+id/deathdeath" />
+
+    <TextView
+        android:id="@+id/newCcasenewCcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="newCcase"
+        app:layout_constraintStart_toEndOf="@+id/newCcase"
+        app:layout_constraintTop_toBottomOf="@+id/newFcasenewFcase" />
+
+    <TextView
+        android:id="@+id/totalCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="확진환자수"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCase" />
+
+    <TextView
+        android:id="@+id/recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="완치자수"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalCase" />
+
+    <TextView
+        android:id="@+id/death"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:text="사망자"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryName" />
+
+    <TextView
+        android:id="@+id/newFcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="해외유입"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/death"
+        app:layout_constraintTop_toBottomOf="@+id/death" />
+
+    <TextView
+        android:id="@+id/newCcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="지역발생"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/newFcase"
+        app:layout_constraintTop_toBottomOf="@+id/newFcase" />
+</androidx.constraintlayout.widget.ConstraintLayout>
